@@ -1,0 +1,102 @@
+*::before::after{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    --circle: hsla(213, 19%, 18%, 50%);
+    font-size: 15px;
+    font-family: Overpass;
+    background-color:  black;
+    color: hsl(216, 12%, 54%);
+    margin: 25px;
+}
+
+.query{
+    display: block;
+}
+
+.star{
+    scale: 1;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--circle);
+}
+
+main{
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: hsl(216, 12%, 8%);
+    padding: 20px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%)
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.button{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--circle);
+    transition: all .2s;
+    color: hsl(216, 12%, 54%);
+}
+
+.button:hover{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.btn{
+    width: 100%;
+    border: 0px;
+    margin: 10px 0;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    height: 3em;
+    transition: all .2s;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.message{
+    margin-top: 20px;
+}
+
+.thank-you{
+    display: none;
+}
+
+.thank-you > *{
+    margin: 10px 0;
+    text-align: center;
+    
+    
+}
+
+.thank-you img{
+    margin: 10px;
+
+}
+
+.query-return{
+    width: 100%;
+    color:hsl(25, 97%, 53%);
+    background-color: var(--circle);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 15px;
+}
