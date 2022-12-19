@@ -26,6 +26,10 @@ body{
 }
 
 main{
+    width: 100%;
+    margin: auto;
+    margin-top: 40%;
+    max-width: 300px;
     border-radius: 10px;
     margin-bottom: 30px;
     background-color: hsl(216, 12%, 8%);
@@ -70,6 +74,8 @@ h1{
 
 .btn:hover{
     cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
 }
 
 .message{
