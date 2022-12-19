@@ -23,6 +23,7 @@ function cancelPrevious() {
 }
 
 submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   if (rating) {
     section1.style.display = 'none';
     section2.style.display = 'block';
