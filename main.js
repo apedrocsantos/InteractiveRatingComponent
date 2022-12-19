@@ -29,9 +29,9 @@ submitBtn.addEventListener("click", (e) => {
     section2.style.display = 'block';
     queryReturn.textContent = `You selected ${rating} out of 5`
 
-    /*setTimeout(() => {
+    setTimeout(() => {
       msg.style.display = "none";
-    }, 3000);*/
+    }, 3000);
   }
 });
 
