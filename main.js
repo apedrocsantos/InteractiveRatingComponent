@@ -14,12 +14,27 @@ evalBtn.forEach((item) =>
     cancelPrevious();
   }));
 
+evalBtn.forEach((item) =>{
+  item.addEventListener("mouseover", (e) => {
+    item.style.backgroundColor = 'hsl(216, 12%, 54%)';
+  })
+})
+
+
 function cancelPrevious() {
   evalBtn.forEach((item) => {
-    if(item.value !== rating) {
-      item.style.backgroundColor = 'var(--circle)';
+    if (item.value !== rating) {
+      item.style.backgroundColor = "var(--circle)";
+      item.addEventListener("mouseout", (e) => {
+        item.style.backgroundColor = "var(--circle)";
+      });
     }
-  })
+    else{
+      item.addEventListener("mouseout", (e) => {
+        item.style.backgroundColor = "hsl(25, 97%, 53%)";
+      });
+    }
+  });
 }
 
 submitBtn.addEventListener("click", (e) => {
@@ -28,10 +43,6 @@ submitBtn.addEventListener("click", (e) => {
     section1.style.display = 'none';
     section2.style.display = 'block';
     queryReturn.textContent = `You selected ${rating} out of 5`
-
-    /*setTimeout(() => {
-      section2.style.display = "none";
-    }, 3000);*/
   }
 });
 
